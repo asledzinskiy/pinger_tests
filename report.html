@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 12-Apr-2025 at 18:08:29 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">21 tests took 00:01:20.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">14 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">7 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.9.13&#34;, &#34;Platform&#34;: &#34;macOS-15.3.1-arm64-arm-64bit&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.5&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}}, &#34;tests&#34;: {&#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_invalid_ip&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_invalid_ip&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_negative_scenarios.py::TestNegativeScenarios::test_invalid_ip&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_negative_scenarios.TestNegativeScenarios object at 0x1067a5b20&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_invalid_ip0&amp;#x27;)\n\n    @pytest.mark.negative\n    @pytest.mark.regression\n    def test_invalid_ip(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with 1 invalid endpoint, min_successful_pings - 1, max_pings - 1\n    \n        Steps:\n        1. Create a config containing 1 invalid endpoint.\n        2. Set `min_successful_pings` to `1`.\n        3. Set `max_pings` to `1`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   The application should display a validation error message\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, 1, 1, endpoints.invalid_ip)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;Endpoint ip is invalid. No checks will be performed&amp;quot;\n&amp;gt;       assert expected_status in stdout_lines, f&amp;quot;validation message is not present in stdout {stdout_lines}&amp;quot;\nE       AssertionError: validation message is not present in stdout [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_invalid_ip0/input_config_4035.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of &amp;lt;nil&amp;gt; []...&amp;#x27;, &amp;#x27;NOT OK [0/1]&amp;#x27;]\nE       assert &amp;#x27;Endpoint ip is invalid. No checks will be performed&amp;#x27; in [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pyte...p0/input_config_4035.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of &amp;lt;nil&amp;gt; []...&amp;#x27;, &amp;#x27;NOT OK [0/1]&amp;#x27;]\n\ntests/test_negative_scenarios.py:32: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_negative_scenarios.py:25 Creating configuration file\nINFO     pinger_tests:test_negative_scenarios.py:27 Executing Pinger\nINFO     pinger_tests:test_negative_scenarios.py:29 Checking Pinger output\n\n&#34;}], &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_invalid_data_types&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_invalid_data_types&#34;, &#34;duration&#34;: &#34;51 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_negative_scenarios.py::TestNegativeScenarios::test_invalid_data_types&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;51 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_negative_scenarios.TestNegativeScenarios object at 0x1067a5d00&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_invalid_data_types0&amp;#x27;)\n\n    @pytest.mark.negative\n    @pytest.mark.regression\n    def test_invalid_data_types(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with invalid data types\n    \n        Steps:\n        1. Create a config containing endpoint with invalid data types.\n        2. Set `min_successful_pings` to `one`.\n        3. Set `max_pings` to `two`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   The application should display a validation error message\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, &amp;quot;one&amp;quot;, &amp;quot;two&amp;quot;, endpoints.invalid_data_type)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;Config data is invalid&amp;quot;\n&amp;gt;       assert expected_status in stdout_lines, f&amp;quot;validation message is not present in stdout {stdout_lines}&amp;quot;\nE       AssertionError: validation message is not present in stdout [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_invalid_data_types0/input_config_6419.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of &amp;lt;nil&amp;gt; []...&amp;#x27;, &amp;#x27;NOT OK [0/0]&amp;#x27;]\nE       assert &amp;#x27;Config data is invalid&amp;#x27; in [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pyte...s0/input_config_6419.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of &amp;lt;nil&amp;gt; []...&amp;#x27;, &amp;#x27;NOT OK [0/0]&amp;#x27;]\n\ntests/test_negative_scenarios.py:56: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_negative_scenarios.py:49 Creating configuration file\nINFO     pinger_tests:test_negative_scenarios.py:51 Executing Pinger\nINFO     pinger_tests:test_negative_scenarios.py:53 Checking Pinger output\n\n&#34;}], &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_negative_ping_numbers&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_negative_ping_numbers&#34;, &#34;duration&#34;: &#34;27 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_negative_scenarios.py::TestNegativeScenarios::test_negative_ping_numbers&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;27 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_negative_scenarios.TestNegativeScenarios object at 0x1067a5280&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_negative_ping_numbers0&amp;#x27;)\n\n    @pytest.mark.negative\n    @pytest.mark.regression\n    def test_negative_ping_numbers(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with negative ping numbers\n    \n        Steps:\n        1. Create a config containing 1 valid endpoint.\n        2. Set `min_successful_pings` to `-1`.\n        3. Set `max_pings` to `-1`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   The application should display a validation error message\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, -1, -1, endpoints.one_valid_endpoint)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;Max and min number of pings can&amp;#x27;t be negative&amp;quot;\n&amp;gt;       assert expected_status in stdout_lines, f&amp;quot;validation message is not present in stdout {stdout_lines}&amp;quot;\nE       AssertionError: validation message is not present in stdout [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_negative_ping_numbers0/input_config_1850.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;NOT OK [0/-1]&amp;#x27;]\nE       assert &amp;quot;Max and min number of pings can&amp;#x27;t be negative&amp;quot; in [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pyte...850.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;NOT OK [0/-1]&amp;#x27;]\n\ntests/test_negative_scenarios.py:80: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_negative_scenarios.py:73 Creating configuration file\nINFO     pinger_tests:test_negative_scenarios.py:75 Executing Pinger\nINFO     pinger_tests:test_negative_scenarios.py:77 Checking Pinger output\n\n&#34;}], &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_no_config&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_no_config&#34;, &#34;duration&#34;: &#34;9 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_negative_scenarios.py::TestNegativeScenarios::test_no_config&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;9 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_negative_scenarios.py:94 Executing Pinger\nINFO     pinger_tests:test_negative_scenarios.py:96 Checking Pinger output\n\n&#34;}], &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_non_existent_path&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_negative_scenarios.py::TestNegativeScenarios::test_non_existent_path&#34;, &#34;duration&#34;: &#34;19 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_negative_scenarios.py::TestNegativeScenarios::test_non_existent_path&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;19 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_negative_scenarios.TestNegativeScenarios object at 0x1067a5310&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_non_existent_path0&amp;#x27;)\n\n    @pytest.mark.pinging\n    @pytest.mark.regression\n    def test_non_existent_path(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with non-existent config path\n    \n        Steps:\n        1. Attempt to execute the pinger application without providing any command-line argument for the configuration file path\n    \n        Expected Results:\n        -   The application should display a user-friendly message indicating how to provide the configuration file path\n        &amp;quot;&amp;quot;&amp;quot;\n        path = f&amp;quot;{tmp_path}/404.json&amp;quot;\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;Provided config path doesn&amp;#x27;t exist&amp;quot;\n&amp;gt;       assert expected_status in stdout_lines, f&amp;quot;Validation message not in the stdout: {stdout_lines}&amp;quot;\nE       AssertionError: Validation message not in the stdout: [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_non_existent_path0/404.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;]\nE       assert &amp;quot;Provided config path doesn&amp;#x27;t exist&amp;quot; in [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_non_existent_path0/404.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;]\n\ntests/test_negative_scenarios.py:119: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_negative_scenarios.py:114 Executing Pinger\nINFO     pinger_tests:test_negative_scenarios.py:116 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_2min_3max_pings&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_2min_3max_pings&#34;, &#34;duration&#34;: &#34;68 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_2min_3max_pings&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;68 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:25 Creating configuration file\nINFO     pinger_tests:test_pinging.py:27 Executing Pinger\nINFO     pinger_tests:test_pinging.py:29 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_2min_2max_pings&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_2min_2max_pings&#34;, &#34;duration&#34;: &#34;171 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_2min_2max_pings&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;171 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_pinging.TestPinging object at 0x106831250&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_2min_2max_pings0&amp;#x27;)\n\n    @pytest.mark.pinging\n    @pytest.mark.regression\n    def test_2min_2max_pings(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with 3 valid endpoint, min_successful_pings - 2, max_pings - 2\n    \n        Steps:\n        1. Create a config containing three valid endpoints.\n        2. Set `min_successful_pings` to `2`.\n        3. Set `max_pings` to `2`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   The application should execute ping exactly 1 time, not 2\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, 2, 2, endpoints.three_valid_endpoints)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;OK [1/1]&amp;quot;\n&amp;gt;       assert stdout_lines[-1] == expected_status, f&amp;quot;Expected status is {expected_status},&amp;quot; \\\n                                                    f&amp;quot; got - {stdout_lines[-1]}&amp;quot;\nE       AssertionError: Expected status is OK [1/1], got - NOT OK [1/2]\nE       assert &amp;#x27;NOT OK [1/2]&amp;#x27; == &amp;#x27;OK [1/1]&amp;#x27;\nE         \nE         - OK [1/1]\nE         + NOT OK [1/2]\n\ntests/test_pinging.py:57: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:50 Creating configuration file\nINFO     pinger_tests:test_pinging.py:52 Executing Pinger\nINFO     pinger_tests:test_pinging.py:54 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_1min_2max_pings&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_1min_2max_pings&#34;, &#34;duration&#34;: &#34;00:00:22&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_1min_2max_pings&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:22&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_pinging.TestPinging object at 0x106831460&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_1min_2max_pings0&amp;#x27;)\n\n    @pytest.mark.pinging\n    @pytest.mark.regression\n    def test_1min_2max_pings(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with 1 unreachable endpoint, min_successful_pings - 1, max_pings - 2\n    \n        Steps:\n        1. Create a config containing 1 unreachable endpoint.\n        2. Set `min_successful_pings` to `1`.\n        3. Set `max_pings` to `2`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   The application should execute ping exactly 2 times\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, 1, 2, endpoints.one_invalid_endpoint)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;NOT OK [0/2]&amp;quot;\n&amp;gt;       assert stdout_lines[-1] == expected_status, f&amp;quot;Expected status is {expected_status},&amp;quot; \\\n                                                    f&amp;quot; got - {stdout_lines[-1]}&amp;quot;\nE       AssertionError: Expected status is NOT OK [0/2], got - NOT OK [0/1]\nE       assert &amp;#x27;NOT OK [0/1]&amp;#x27; == &amp;#x27;NOT OK [0/2]&amp;#x27;\nE         \nE         - NOT OK [0/2]\nE         ?           ^\nE         + NOT OK [0/1]\nE         ?           ^\n\ntests/test_pinging.py:82: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:75 Creating configuration file\nINFO     pinger_tests:test_pinging.py:77 Executing Pinger\nINFO     pinger_tests:test_pinging.py:79 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_0min_0max_pings&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_0min_0max_pings&#34;, &#34;duration&#34;: &#34;71 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_0min_0max_pings&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;71 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_pinging.TestPinging object at 0x106831670&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_0min_0max_pings0&amp;#x27;)\n\n    @pytest.mark.pinging\n    @pytest.mark.regression\n    def test_0min_0max_pings(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with 1 unreachable endpoint, min_successful_pings - 0, max_pings - 0\n    \n        Steps:\n        1. Create a config containing 1 unreachable endpoint.\n        2. Set `min_successful_pings` to `0`.\n        3. Set `max_pings` to `0`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   The endpoint should be effectively ignored; no ping attempts should be made\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, 0, 0, endpoints.one_invalid_endpoint)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;Checking availability of 191.111.1.1 [Cloudflare DNS]...&amp;quot;\n&amp;gt;       assert expected_status not in stdout_lines, f&amp;quot;191.111.1.1 endpoint is present in stdout {stdout_lines}&amp;quot;\nE       AssertionError: 191.111.1.1 endpoint is present in stdout [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_0min_0max_pings0/input_config_1654.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of 191.111.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;NOT OK [0/0]&amp;#x27;]\nE       assert &amp;#x27;Checking availability of 191.111.1.1 [Cloudflare DNS]...&amp;#x27; not in [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pyte....json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of 191.111.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;NOT OK [0/0]&amp;#x27;]\n\ntests/test_pinging.py:107: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:100 Creating configuration file\nINFO     pinger_tests:test_pinging.py:102 Executing Pinger\nINFO     pinger_tests:test_pinging.py:104 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_0min_1max_pings&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_0min_1max_pings&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_0min_1max_pings&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:124 Creating configuration file\nINFO     pinger_tests:test_pinging.py:126 Executing Pinger\nINFO     pinger_tests:test_pinging.py:128 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_1min_0max_pings&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_1min_0max_pings&#34;, &#34;duration&#34;: &#34;56 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_1min_0max_pings&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;56 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:149 Creating configuration file\nINFO     pinger_tests:test_pinging.py:151 Executing Pinger\nINFO     pinger_tests:test_pinging.py:153 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_check_non_zero_exit_code&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_check_non_zero_exit_code&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_check_non_zero_exit_code&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:174 Creating configuration file\nINFO     pinger_tests:test_pinging.py:176 Executing Pinger\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_check_zero_exit_code&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_check_zero_exit_code&#34;, &#34;duration&#34;: &#34;83 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_check_zero_exit_code&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;83 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_pinging.TestPinging object at 0x106831eb0&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_check_zero_exit_code0&amp;#x27;)\n\n    @pytest.mark.pinging\n    @pytest.mark.regression\n    def test_check_zero_exit_code(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with 1 valid endpoint, min_successful_pings - 1, max_pings - 1\n    \n        Steps:\n        1. Create a config containing 1 valid endpoints.\n        2. Set `min_successful_pings` to `1`.\n        3. Set `max_pings` to `1`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   The application should exit with 0 exit code\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, 1, 1, endpoints.one_valid_endpoint)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        with pytest.raises(RuntimeError) as exc_info:\n            pinger_executor.run_pinger(config_path, expected_exit_code=0)\n&amp;gt;       assert exc_info.value is None, f&amp;quot;Code was executed with non-zero exit code.&amp;quot; \\\n                                       f&amp;quot;Next exception was raised - {exc_info.value}&amp;quot;\nE       AssertionError: Code was executed with non-zero exit code.Next exception was raised - Error executing binary &amp;#x27;/Users/andrii.zledzynskyi/PycharmProjects/temp_proj/pinger/pinger&amp;#x27;: Binary &amp;#x27;/Users/andrii.zledzynskyi/PycharmProjects/temp_proj/pinger/pinger&amp;#x27; exited with code 123, expected 0.\nE         Stdout: Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_check_zero_exit_code0/input_config_5378.json..\nE         Starting availability check...\nE         Checking availability of 1.1.1.1 [Cloudflare DNS]...\nE         OK [1/1]\nE         \nE         Stderr: \nE       assert RuntimeError(&amp;quot;Error executing binary &amp;#x27;/Users/andrii.zledzynskyi/PycharmProjects/temp_proj/pinger/pinger&amp;#x27;: Binary &amp;#x27;/Use...78.json..\\nStarting availability check...\\nChecking availability of 1.1.1.1 [Cloudflare DNS]...\\nOK [1/1]\\n\\nStderr: &amp;quot;) is None\nE        +  where RuntimeError(&amp;quot;Error executing binary &amp;#x27;/Users/andrii.zledzynskyi/PycharmProjects/temp_proj/pinger/pinger&amp;#x27;: Binary &amp;#x27;/Use...78.json..\\nStarting availability check...\\nChecking availability of 1.1.1.1 [Cloudflare DNS]...\\nOK [1/1]\\n\\nStderr: &amp;quot;) = &amp;lt;ExceptionInfo RuntimeError(&amp;quot;Error executing binary &amp;#x27;/Users/andrii.zledzynskyi/PycharmProjects/temp_proj/pinger/pinger...\\nStarting availability check...\\nChecking availability of 1.1.1.1 [Cloudflare DNS]...\\nOK [1/1]\\n\\nStderr: &amp;quot;) tblen=2&amp;gt;.value\n\ntests/test_pinging.py:199: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:194 Creating configuration file\nINFO     pinger_tests:test_pinging.py:196 Executing Pinger\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_ignore_field&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_ignore_field&#34;, &#34;duration&#34;: &#34;77 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_ignore_field&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;77 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_pinging.TestPinging object at 0x10683d100&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_ignore_field0&amp;#x27;)\n\n    @pytest.mark.pinging\n    @pytest.mark.regression\n    def test_ignore_field(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with 2 valid endpoints, min_successful_pings - 1, max_pings - 1 and one is ignored\n    \n        Steps:\n        1. Create a config containing 2 valid endpoints.\n        2. Set `min_successful_pings` to `1`.\n        3. Set `max_pings` to `1`.\n        4. Set one endpoint &amp;#x27;ignore&amp;#x27; field to True\n        5. Run the pinger\n    \n        Expected Results:\n        -   The ignored endpoint shouldn&amp;#x27;t be executed\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, 1, 1, endpoints.two_valid_ignored)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;Checking availability of 8.8.8.8 [Google DNS]...&amp;quot;\n&amp;gt;       assert expected_status not in stdout_lines, f&amp;quot;8.8.8.8 endpoint is present in stdout {stdout_lines}&amp;quot;\nE       AssertionError: 8.8.8.8 endpoint is present in stdout [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_ignore_field0/input_config_5611.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;]\nE       assert &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27; not in [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pyte...ailability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;]\n\ntests/test_pinging.py:225: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:218 Creating configuration file\nINFO     pinger_tests:test_pinging.py:220 Executing Pinger\nINFO     pinger_tests:test_pinging.py:222 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_many_endpoints&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_many_endpoints&#34;, &#34;duration&#34;: &#34;363 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_many_endpoints&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;363 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_pinging.TestPinging object at 0x10683d310&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_many_endpoints0&amp;#x27;)\n\n    @pytest.mark.pinging\n    @pytest.mark.regression\n    def test_many_endpoints(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with 12 valid endpoints, min_successful_pings - 1, max_pings - 1\n    \n        Steps:\n        1. Create a config containing 12 valid endpoints.\n        2. Set `min_successful_pings` to `1`.\n        3. Set `max_pings` to `1`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   All 12 endpoints are executed\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, 1, 1, endpoints.twelve_valid_endpoints)\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;Checking availability of 8.8.8.8 [12th DNS]...&amp;quot;\n&amp;gt;       assert expected_status in stdout_lines, f&amp;quot;8.8.8.8 12th DNS endpoint is not present in stdout {stdout_lines}&amp;quot;\nE       AssertionError: 8.8.8.8 12th DNS endpoint is not present in stdout [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_many_endpoints0/input_config_9434.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;, &amp;#x27;Checking availability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;]\nE       assert &amp;#x27;Checking availability of 8.8.8.8 [12th DNS]...&amp;#x27; in [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pyte...ility of 1.1.1.1 [Cloudflare DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, &amp;#x27;Checking availability of 8.8.8.8 [Google DNS]...&amp;#x27;, &amp;#x27;OK [1/1]&amp;#x27;, ...]\n\ntests/test_pinging.py:249: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:242 Creating configuration file\nINFO     pinger_tests:test_pinging.py:244 Executing Pinger\nINFO     pinger_tests:test_pinging.py:246 Checking Pinger output\n\n&#34;}], &#34;tests/test_pinging.py::TestPinging::test_empty_endpoints&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_pinging.py::TestPinging::test_empty_endpoints&#34;, &#34;duration&#34;: &#34;31 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_pinging.py::TestPinging::test_empty_endpoints&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;31 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_pinging.TestPinging object at 0x10683d520&amp;gt;, tmp_path = PosixPath(&amp;#x27;/private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_empty_endpoints0&amp;#x27;)\n\n    @pytest.mark.pinging\n    @pytest.mark.regression\n    def test_empty_endpoints(self, tmp_path):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario with empty endpoints list, min_successful_pings - 1, max_pings - 1\n    \n        Steps:\n        1. Create a config containing empty endpoints list.\n        2. Set `min_successful_pings` to `1`.\n        3. Set `max_pings` to `1`.\n        4. Run the pinger\n    \n        Expected Results:\n        -   The application should display a user-friendly message indicating that the endpoints list is empty and no pings will be performed.\n        &amp;quot;&amp;quot;&amp;quot;\n        default_logger.info(&amp;quot;Creating configuration file&amp;quot;)\n        config_path = config_creator.create_config(tmp_path, 1, 1, [])\n        default_logger.info(&amp;quot;Executing Pinger&amp;quot;)\n        stdout = pinger_executor.run_pinger(config_path)\n        default_logger.info(&amp;quot;Checking Pinger output&amp;quot;)\n        stdout_lines = stdout.split(&amp;quot;\\n&amp;quot;)\n        expected_status = &amp;quot;Endpoint list is empty. No checks will be performed&amp;quot;\n&amp;gt;       assert expected_status in stdout_lines, f&amp;quot;validation message is not present in stdout {stdout_lines}&amp;quot;\nE       AssertionError: validation message is not present in stdout [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_empty_endpoints0/input_config_9063.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;]\nE       assert &amp;#x27;Endpoint list is empty. No checks will be performed&amp;#x27; in [&amp;#x27;Loading configration from /private/var/folders/g3/ds5t13jx59xbg10wy5htflhh0000gn/T/pytest-of-andrii.zledzynskyi/pytest-30/test_empty_endpoints0/input_config_9063.json..&amp;#x27;, &amp;#x27;Starting availability check...&amp;#x27;]\n\ntests/test_pinging.py:273: AssertionError\n\n------------------------------ Captured log call -------------------------------\nINFO     pinger_tests:test_pinging.py:266 Creating configuration file\nINFO     pinger_tests:test_pinging.py:268 Executing Pinger\nINFO     pinger_tests:test_pinging.py:270 Checking Pinger output\n\n&#34;}], &#34;tests/test_reporting.py::TestReporting::test_start_end_time&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_reporting.py::TestReporting::test_start_end_time&#34;, &#34;duration&#34;: &#34;00:00:33&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_reporting.py::TestReporting::test_start_end_time&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:33&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_reporting.TestReporting object at 0x1068a61c0&amp;gt;\nget_pinger_report = {&amp;#x27;end_time&amp;#x27;: &amp;#x27;2025-04-12T18:07:56.302121+02:00&amp;#x27;, &amp;#x27;entries&amp;#x27;: [{&amp;#x27;endpoint&amp;#x27;: {&amp;#x27;addr&amp;#x27;: &amp;#x27;1.1.1.1&amp;#x27;, &amp;#x27;description&amp;#x27;: &amp;#x27;Cloudfla...ogle DNS&amp;#x27;, &amp;#x27;ignore&amp;#x27;: False}, &amp;#x27;successful_pings&amp;#x27;: 0, &amp;#x27;total_pings&amp;#x27;: 3}], &amp;#x27;max_pings&amp;#x27;: 1, &amp;#x27;min_successful_pings&amp;#x27;: 1, ...}\n\n    @pytest.mark.reporting\n    @pytest.mark.regression\n    def test_start_end_time(self, get_pinger_report):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario to check start time is earlier than end time\n    \n        Steps:\n        1. Prepare report\n        2. Check start and end time\n    \n        Expected Results:\n        -   The &amp;#x27;start_time&amp;#x27; value in the report should be chronologically earlier than the &amp;#x27;end_time&amp;#x27; value.\n        &amp;quot;&amp;quot;&amp;quot;\n        start_time = parser.isoparse(get_pinger_report[&amp;#x27;start_time&amp;#x27;])\n        end_time = parser.isoparse(get_pinger_report[&amp;#x27;end_time&amp;#x27;])\n&amp;gt;       assert start_time &amp;lt; end_time, f&amp;quot;Start time is not earlier than end time,&amp;quot; \\\n                                      f&amp;quot;start time is {start_time}, end time is {end_time}&amp;quot;\nE       AssertionError: Start time is not earlier than end time,start time is 2025-04-12 18:07:56.302121+02:00, end time is 2025-04-12 18:07:56.302121+02:00\nE       assert datetime.datetime(2025, 4, 12, 18, 7, 56, 302121, tzinfo=tzoffset(None, 7200)) &amp;lt; datetime.datetime(2025, 4, 12, 18, 7, 56, 302121, tzinfo=tzoffset(None, 7200))\n\ntests/test_reporting.py:27: AssertionError\n\n------------------------------ Captured log setup ------------------------------\nINFO     pinger_tests:conftest.py:14 Creating configuration file\nINFO     pinger_tests:conftest.py:18 Executing Pinger\n&#34;}], &#34;tests/test_reporting.py::TestReporting::test_min_max_pings&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_reporting.py::TestReporting::test_min_max_pings&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_reporting.py::TestReporting::test_min_max_pings&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_reporting.TestReporting object at 0x1068a63d0&amp;gt;\nget_pinger_report = {&amp;#x27;end_time&amp;#x27;: &amp;#x27;2025-04-12T18:07:56.302121+02:00&amp;#x27;, &amp;#x27;entries&amp;#x27;: [{&amp;#x27;endpoint&amp;#x27;: {&amp;#x27;addr&amp;#x27;: &amp;#x27;1.1.1.1&amp;#x27;, &amp;#x27;description&amp;#x27;: &amp;#x27;Cloudfla...ogle DNS&amp;#x27;, &amp;#x27;ignore&amp;#x27;: False}, &amp;#x27;successful_pings&amp;#x27;: 0, &amp;#x27;total_pings&amp;#x27;: 3}], &amp;#x27;max_pings&amp;#x27;: 1, &amp;#x27;min_successful_pings&amp;#x27;: 1, ...}\n\n    @pytest.mark.reporting\n    @pytest.mark.regression\n    def test_min_max_pings(self, get_pinger_report):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Scenario to check min/max pings equal to config values\n    \n        Steps:\n        1. Prepare report\n        2. Inspect the &amp;#x27;min_successful_pings&amp;#x27; and &amp;#x27;max_pings&amp;#x27; values in the generated report\n    \n        Expected Results:\n        -   The &amp;#x27;min_successful_pings&amp;#x27; value in the report should be 2.\n        -   The &amp;#x27;max_pings&amp;#x27; value should be 3, matching the configuration.\n        &amp;quot;&amp;quot;&amp;quot;\n        min_pings = get_pinger_report[&amp;#x27;min_successful_pings&amp;#x27;]\n        max_pings = get_pinger_report[&amp;#x27;max_pings&amp;#x27;]\n&amp;gt;       assert min_pings == 2, f&amp;quot;Min pings value should be 2,&amp;quot; \\\n                               f&amp;quot;actual value is {min_pings}&amp;quot;\nE       AssertionError: Min pings value should be 2,actual value is 1\nE       assert 1 == 2\n\ntests/test_reporting.py:46: AssertionError\n&#34;}], &#34;tests/test_reporting.py::TestReporting::test_check_entries_len&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_reporting.py::TestReporting::test_check_entries_len&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_reporting.py::TestReporting::test_check_entries_len&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_reporting.py::TestReporting::test_check_entries&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/test_reporting.py::TestReporting::test_check_entries&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_reporting.py::TestReporting::test_check_entries&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tests/test_reporting.py::TestReporting::test_total_successful_pings&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;tests/test_reporting.py::TestReporting::test_total_successful_pings&#34;, &#34;duration&#34;: &#34;0 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/test_reporting.py::TestReporting::test_total_successful_pings&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;0 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;self = &amp;lt;pinger_tests.tests.test_reporting.TestReporting object at 0x1068a6a00&amp;gt;\nget_pinger_report = {&amp;#x27;end_time&amp;#x27;: &amp;#x27;2025-04-12T18:07:56.302121+02:00&amp;#x27;, &amp;#x27;entries&amp;#x27;: [{&amp;#x27;endpoint&amp;#x27;: {&amp;#x27;addr&amp;#x27;: &amp;#x27;1.1.1.1&amp;#x27;, &amp;#x27;description&amp;#x27;: &amp;#x27;Cloudfla...ogle DNS&amp;#x27;, &amp;#x27;ignore&amp;#x27;: False}, &amp;#x27;successful_pings&amp;#x27;: 0, &amp;#x27;total_pings&amp;#x27;: 3}], &amp;#x27;max_pings&amp;#x27;: 1, &amp;#x27;min_successful_pings&amp;#x27;: 1, ...}\n\n    @pytest.mark.reporting\n    @pytest.mark.regression\n    def test_total_successful_pings(self, get_pinger_report):\n        &amp;quot;&amp;quot;&amp;quot;&amp;quot;\n        Check entries are correct - total/successful pings\n    \n        Steps:\n        1. Prepare report\n        2. Inspect the &amp;#x27;entries&amp;#x27; array in the generated report.\n    \n        Expected Results:\n        -   &amp;#x27;total_pings&amp;#x27; should be 2, and &amp;#x27;successful_pings&amp;#x27; should be 2\n        -   For the invalid endpoint, &amp;#x27;total_pings&amp;#x27; should be 3, and &amp;#x27;successful_pings&amp;#x27; should be 0.\n        &amp;quot;&amp;quot;&amp;quot;\n        valid_endpoints_total_pings = get_pinger_report[&amp;#x27;entries&amp;#x27;][0][&amp;#x27;total_pings&amp;#x27;]\n        valid_endpoints_success_pings = get_pinger_report[&amp;#x27;entries&amp;#x27;][0][&amp;#x27;successful_pings&amp;#x27;]\n        invalid_endpoints_total_pings = get_pinger_report[&amp;#x27;entries&amp;#x27;][2][&amp;#x27;total_pings&amp;#x27;]\n        invalid_endpoints_success_pings = get_pinger_report[&amp;#x27;entries&amp;#x27;][2][&amp;#x27;successful_pings&amp;#x27;]\n    \n        assert invalid_endpoints_total_pings == 3, f&amp;quot;Invalid endpoints is expected to be pinged 3 times ,&amp;quot; \\\n                                                   f&amp;quot;actual result is {invalid_endpoints_total_pings}&amp;quot;\n        assert invalid_endpoints_success_pings == 0, f&amp;quot;Invalid endpoints is expected to be successfully pinged 0 times ,&amp;quot; \\\n                                                     f&amp;quot;actual result is {invalid_endpoints_success_pings}&amp;quot;\n&amp;gt;       assert valid_endpoints_total_pings == 2, f&amp;quot;Valid endpoints is expected to be pinged 2 times ,&amp;quot; \\\n                                                 f&amp;quot;actual result is {valid_endpoints_total_pings}&amp;quot;\nE       AssertionError: Valid endpoints is expected to be pinged 2 times ,actual result is 3\nE       assert 3 == 2\n\ntests/test_reporting.py:113: AssertionError\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
