@@ -18,6 +18,7 @@ During testing, 16 bug reports were created. The details of these bug reports ar
 ## Test Automation
 
 All manual test cases were automated using the Python/Pytest framework. This automation will enable efficient and repeatable regression testing for future releases.
+Autotests report s available in the [report.html](report.html) file.
 
 ## Conclusion and Recommendations
 
