@@ -1,7 +1,7 @@
 # pinger_tests
 
 ### Pre-setup
-Pinger binary is build locally
+Pinger binary is built locally
 
 ### Tests SetUp (Linux/MacOS)
 1. Create virtual environment - `python3 -m venv venv`
